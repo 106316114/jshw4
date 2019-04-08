@@ -1,1 +1,70 @@
-# jshw4
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>一般神經科轉診系統</title>
+</head>
+<h1>一般神經科轉診系統</h1>
+  <style type="text/css">
+body {
+background-image:url('https://truth.bahamut.com.tw/s01/201803/57abad8e8b2465f2601fc0524e5eab09.PNG');
+  background-repeat:no-repeat;background-position:right top;background-color: #FFF0F5;
+  }
+    </style>
+<font size="4"><b>病人基本資料:</b></font>
+<br>
+<form id="orderForm1" action="http://203.64.84.113/x/RQ_RS.aspx" method="post"  name="form1" >
+姓名: <input type="text" name="姓名">
+性別:
+<input type="radio" name="性別" value="boy"> 男
+<input type="radio" name="性別" value="girl"> 女
+<br>
+身分證字號: <input type="text" name="身分證">  
+<br>
+聯絡電話: <input type="text" name="電話">
+<br>
+聯絡地址:  <input type="text" name="地址">
+<br>
+生日: <input type="text" name="生年">年 
+  <input type="text" name="生月">月
+  <input type="text" name="生日">日
+<br>
+<br>
+
+<font size="4"><b>轉診基本資料:</b></font>
+<br>
+轉診自: <input type="text" clinic="科">&nbsp;科&nbsp;&nbsp;至一般神經科&nbsp;科<br>
+轉診日期: <input type="text" name="轉診年">年 
+  <input type="text" name="轉診月">月 
+  <input type="text" name="轉診日">日
+<br>
+轉診原因:<br>
+<textarea name="轉診原因";style="width:300px;height:100px;"></textarea>
+<br>
+病歷:<br>
+<textarea name="病例";style="width:300px;height:100px;"></textarea><br>
+  隔離預防:
+    <select name="隔離預防">
+  <option value="none">無</option>
+  <option value="空氣傳播">空氣傳播</option>
+　<option value="接觸傳染">接觸傳染</option>
+　<option value="飛沫傳染">飛沫傳染</option>
+</select>
+  <br>
+  是否看過一般神經科:
+<input type="radio" name="是否看過一般神經科" value="是"> 是
+<input type="radio" name="是否看過一般神經科" value="否"> 否
+  &nbsp;&nbsp;&nbsp;醫生為: 
+  <select name="醫生為">
+  <option value="無">無</option>
+  <option value="陳辰">陳辰</option>
+　<option value="李子">李子</option>
+　<option value="王九">王九</option>
+　<option value="張四">張四</option>
+</select>
+<br>
+<input type="submit" value="送出資料">
+</form>
+</body>
+</html> 
