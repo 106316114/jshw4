@@ -50,14 +50,13 @@ function mybmi1() {
 <script>
  var color=["Red","Green","Blue","Yellow","Black","Gray"];
 function mytable() {
-var table=document.getElementById("myTable");
-  for(i=0;i<colors.length;i++)
+var table=document.getElementsById("prevent");
+  for(i=0;i<table.length;i++)
   {
-      var row=table.insertRow(-1);
-      var c= row.insertCell(0);
-      c.insertHTML=colors[i];
-      c=row.insertCell(0);
-      c.innerHTML="Arrayvalue";
+      if(table[i].checked)
+      {
+        document.getElementsById(myTable.row[i])=table(i);
+      }
   }
 }
  </script>  
@@ -100,10 +99,10 @@ background-image:url('https://truth.bahamut.com.tw/s01/201803/57abad8e8b2465f260
 病歷:<br>
 <textarea name="病例";style="width:300px;height:100px;"></textarea><br>
   隔離預防:
-  <input type="checkbox" name=prevent0" value="none"> 無
-  <input type="checkbox" name="prevent1" value="air"> 空氣傳染
-  <input type="checkbox" name="prevent2" value="contact"> 接觸傳染
-  <input type="checkbox" name="prevent3" value="droplet"> 飛沫傳染<br>
+  <input type="checkbox" name="prevent" value="none"> 無
+  <input type="checkbox" name="prevent" value="air"> 空氣傳染
+  <input type="checkbox" name="prevent" value="contact"> 接觸傳染
+  <input type="checkbox" name="prevent" value="droplet"> 飛沫傳染<br>
   是否看過一般神經科:
 <input type="radio" name="是否看過一般神經科" value="yes"> 是
 <input type="radio" name="是否看過一般神經科" value="no"> 否
