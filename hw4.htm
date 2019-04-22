@@ -50,15 +50,16 @@ function mybmi1() {
 <script>
  var color=["Red","Green","Blue","Yellow","Black","Gray"];
 function mytable() {
-
-  for(i=0;i<table.length;i++)
-  {
-    var table[i]=document.getElementsById("prevent");
-      if(table[i].checked)
-      {
-        document.getElementsById(myTable.row[i])=table(i);
-      }
-  }
+	
+	 obj = document.getElementsByName("prevent");
+    check_val = [];
+    for(int k=0;k<color.length;k++){
+        if(obj[k].checked)
+            check_val[k].value(obj[k].value);
+    }
+	var t = document.getElementById("table1");
+for(int i=0;i<.rows.length;i++)
+ t.rows[i].innerText = check_val[i];	
 }
  </script>  
 </head>
