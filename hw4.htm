@@ -57,7 +57,7 @@ function mytable() {
         if(obj[k].checked)
             check_val[k].value(obj[k].value);
     }
-	var t = document.getElementById("table1");
+	var t = document.getElementById("myTable");
 for(int i=0;i<.rows.length;i++)
  t.rows[i].innerText = check_val[i];	
 }
@@ -138,30 +138,8 @@ background-image:url('https://truth.bahamut.com.tw/s01/201803/57abad8e8b2465f260
 &nbsp;&nbsp;<button onclick="mybmi1()" type="button">計算BMI</button>
 &nbsp;&nbsp;<button onclick="mytable()" type="button">catchValue</button>
 </form>
- <table border="1" width="32%" id="table1">
-  <tr>
-    <td width="33%">　</td>
-    <td width="33%">　</td>
-    <td width="34%">　</td>
-  </tr>
-  <tr>
-    <td width="33%">　</td>
-    <td width="33%">　</td>
-    <td width="34%">　</td>
-  </tr>
-  <tr>
-    <td width="33%">　</td>
-    <td width="33%">　</td>
-    <td width="34%">　</td>
-  </tr>
-</table>
-<script>
-var myArray = [[1,2,3],[4,5,6],[7,8,9]];
-var t = document.getElementById("table1");
-for(var i=0;i<t.rows.length;i++)
-	for(var j=0;j<t.rows[i].cells.length;j++)
-		t.rows[i].cells[j].innerText = myArray[i][j];	
-</script>
+
+
 
 </body>
 </html> 
