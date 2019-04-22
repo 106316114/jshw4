@@ -53,7 +53,7 @@ function mytable() {
 	
 	 obj = document.getElementsByName("prevent");
     var check_val[];
-    for(int k=0;k<color.length;k++){
+    for(k in obj){
         if(obj[k].checked)
             check_val[k].value=obj[k].value;
     }
