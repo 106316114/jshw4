@@ -52,13 +52,13 @@ function mybmi1() {
 function mytable() {
 	
 	 obj = document.getElementsByName("prevent");
-    check_val = [];
+    var check_val[];
     for(int k=0;k<color.length;k++){
         if(obj[k].checked)
-            check_val[k].value(obj[k].value);
+            check_val[k].value=obj[k].value;
     }
 	var t = document.getElementById("myTable");
-for(int i=0;i<.rows.length;i++)
+for(int i=0;i<t.rows.length;i++)
  t.rows[i].innerText = check_val[i];	
 }
  </script>  
