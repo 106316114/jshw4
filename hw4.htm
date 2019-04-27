@@ -53,10 +53,10 @@ function mytable() {
 	 var t = document.getElementById("myTable");
 	 var obj = document.getElementsByName("prevent1");
     var check_val[];
-    for(k in obj){
-        if(obj[k].checked){
+    for(i=0;i<obj.length;i++){
+        if(obj[i].checked){
 		
-             t.rows[i].innerText=obj[k].value;}
+             t.rows[i].innerText=obj[i].value;}
     }
 }
  </script>  
