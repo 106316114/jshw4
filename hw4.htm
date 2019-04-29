@@ -29,7 +29,7 @@ document.getElementById("bday").value=patient.birthDate
  </script>
 <script>
 function myFunction1() {
-  var a = document.getElementById("Fname").value;
+	var a = document.getElementById("Fname").value;
   alert(a);
   var b = document.getElementById("mygender").value;
   alert(b);
@@ -48,16 +48,20 @@ function mybmi1() {
 }
  </script>  
 <script>
- var color=["Red","Green","Blue","Yellow","Black","Gray"];
+
 function mytable() {
-	 var t = document.getElementsById("myTable");
-	 var obj = document.getElementByName("prevent1");
-    var check_val[];
+
+	var t = document.getElementsById("myTable");
+	 var obj1= document.getElementByName("prevent1");
+	 var obj2=document.getElementByName("prevent2");
+	 var obj3=document.getElementByName("prevent3");
+	 var obj4=document.getElementByName("prevent4");
+    
+	 var color=["obj1","obj2","obj3","obj4"];
     for(i=0;i<obj.length;i++){
-        if(obj[i].checked){
 		
-             document.getElementByName("myTable")=obj[i].value;
-	}
+             t.cells[i].innerText=color[i]
+	     ;
     }
 }
  </script>  
