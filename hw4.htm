@@ -56,7 +56,8 @@ function mytable() {
     for(i=0;i<obj.length;i++){
         if(obj[i].checked){
 		
-             myTable.innerText=obj[i].value;}
+             document.getElementByName("myTable")=obj[i].value;
+	}
     }
 }
  </script>  
