@@ -52,15 +52,11 @@ function mybmi1() {
 function mytable() {
 
 	var t = document.getElementById("myTable");
-	 var obj1= document.getElementById("prevent1").value;
-	 var obj2=document.getElementById("prevent2").value;
-	 var obj3=document.getElementById("prevent3").value;
-	 var obj4=document.getElementById("prevent4").value;
+	 
     
-	 var color=["obj1","obj2","obj3"];
     for(i=0;i<color.length;i++){
 		
-             t.rows[i].innerText=color[i];
+             t.rows[i].innerText=t[i];
     }
 }
  </script>  
