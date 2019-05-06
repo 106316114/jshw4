@@ -51,10 +51,10 @@ function mybmi1() {
 
 function mytable() {
 
-	
-    for(i=0;i<3;i++){
-        var t = document.getElementById("myTable");
+	 var t = document.getElementById("myTable");
 	var s= document.getElementById("prevent" + (i + 1).toString());
+    for(i=0;i<3;i++){
+        
 	    if(s.checked)
 	    {
              var row = t.insertRow(-1);
