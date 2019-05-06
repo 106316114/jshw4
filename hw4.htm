@@ -44,6 +44,7 @@ function mybmi1() {
   var hei = document.getElementById("height").value;
   var wei = document.getElementById("weight").value;
   var bmiresult= wei/(hei*hei);
+      bmiresult = bmiresult.toFixed(2); 
  document.getElementById("mybmi").value=bmiresult;
 }
  </script>  
