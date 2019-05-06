@@ -55,7 +55,9 @@ function mytable() {
     for(i=0;i<4;i++){
             var t = document.getElementById("myTable");
 	    var s= document.getElementById("prevent" + (i + 1).toString());
-	    if(s.checked)
+	    
+    }
+	 if(s.checked)
 	    {
              var row = t.insertRow(-1);
              var cell1=row.insertCell(0);  
@@ -63,7 +65,6 @@ function mytable() {
              cell1.innerHTML=s.id; 
              cell2.innerHTML=s.value;
 	    }
-    }
 }
  </script>  
 </head>
